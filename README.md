@@ -3,6 +3,13 @@
 The repo provides a depth estimation functionality using the DenseDepth model. It can process both images and videos to generate depth maps. 
 The code is written in Python and utilizes the Open3D library for point cloud visualization.
 
+## Features
+
+- Video Capture: Utilize OpenCV to capture video frames from a camera feed and save them as a video file for subsequent processing.
+- Depth Estimation: Uses the DenseDepth model to estimate depth maps from input images or frames.
+- Point Cloud Reconstruction: Merge multiple depth maps from different frames into a single point cloud representation.
+- Point Cloud Visualization: Utilize Open3D library to visualize the reconstructed point clouds. 
+
 ## Prerequisites
 
 - Open3D
