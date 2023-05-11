@@ -1,4 +1,4 @@
-# vid2pc: Video to Point Cloud using Depth Estimation 
+# vid2pc: Video to Point Cloud Scene using Depth Estimation 
 
 The repo provides a depth estimation functionality using the DenseDepth model. It can process both images and videos to generate depth maps. 
 The code is written in Python and utilizes the Open3D library for point cloud visualization.
@@ -80,7 +80,7 @@ You can modify this function according to your specific requirements.
 ## Notes
 - The code loads the pre-trained [DenseDepth](https://github.com/ialhashim/DenseDepth) model [NYU Depth V2 (165 MB)](https://drive.google.com/file/d/19dfvGvDfCRYaqxVKypp1fRHwK7XtSjVu/view) and performs inference using it. 
 Make sure to have the model file (nyu.h5) available at the specified path.
-- The BilinearUpscaler2D class is a compact variant to [BilinearSampling2D](https://github.com/ialhashim/DenseDepth/blob/master/layers.py) py DenseDepth creator.
+- The BilinearUpscaler2D class is a compact variant to [BilinearSampling2D](https://github.com/ialhashim/DenseDepth/blob/master/layers.py) by DenseDepth.
 
 
 ## License
