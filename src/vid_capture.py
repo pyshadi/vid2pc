@@ -1,19 +1,17 @@
 import cv2
 
-# Set the desired frame rate
+# desired frame rate
 desired_fps = 2
 
 
 def vid_capture():
-
     cap = cv2.VideoCapture(0)
-
-    # Check if the camera is opened successfully
+    
     if not cap.isOpened():
         print("Failed to open the camera")
         exit()
 
-    # Set the frame rate of the VideoCapture object
+    # frame rate of the VideoCapture object
     cap.set(cv2.CAP_PROP_FPS, desired_fps)
 
     frame_width = int(cap.get(3))
