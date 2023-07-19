@@ -6,10 +6,10 @@ def create_point_cloud(input_file):
     _, ext = os.path.splitext(input_file)
     ext = ext.lower()
 
-    if ext in ['.jpg', '.png']:  # Add or modify this list based on which image formats you want to accept
+    if ext in ['.jpg', '.png']:  # image formats to accept
         frame = cv2.imread(input_file)
         process_frame(frame, 0)
-    elif ext in ['.avi']:  # Add or modify this list based on which video formats you want to accept
+    elif ext in ['.avi']:  # video formats to accept
         cap = cv2.VideoCapture(input_file)
         frame_num = 0
 
